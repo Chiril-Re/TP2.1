@@ -42,8 +42,11 @@ public class Server {
         this.addEventHandler((cmd, arg) -> {
             try {
                 handleEvents(cmd, arg);
-            } catch (ClassNotFoundException | IOException e) {
-                // TODO 1
+            } catch (ClassNotFoundException e) {
+                // TODO
+                e.printStackTrace();
+            } catch (IOException e) {
+                // TODO
                 e.printStackTrace();
             }
         });
