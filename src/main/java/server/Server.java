@@ -125,8 +125,8 @@ public class Server {
 
     /**
      *
-     * @param cmd
-     * @param arg
+     * @param cmd la commande (INSCRIRE ou CHARGER) que l on va traiter
+     * @param arg les parametres de cette fonction
      */
     public void handleEvents(String cmd, String arg) {
         if (cmd.equals(REGISTER_COMMAND)) {
